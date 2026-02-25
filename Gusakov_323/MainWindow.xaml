@@ -1,0 +1,19 @@
+﻿<Window x:Class="Gusakov_323.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gusakov_323"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="850" Width="1200">
+    <DockPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Background="LightGray" Height="40">
+            <Button Content="Страница 1" Width="100" Margin="5" Click="BtnPage1_Click"/>
+            <Button Content="Страница 2" Width="100" Margin="5" Click="BtnPage2_Click"/>
+            <Button Content="Страница 3" Width="100" Margin="5" Click="BtnPage3_Click"/>
+        </StackPanel>
+
+        <!-- Место для загрузки страниц -->
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+    </DockPanel>
+</Window>
