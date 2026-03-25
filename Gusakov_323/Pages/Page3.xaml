@@ -59,7 +59,7 @@
                 <TextBlock Grid.Row="1" Grid.Column="0" Text="x₀ =" 
                            FontSize="14" FontWeight="Bold" 
                            VerticalAlignment="Center" Margin="10,5" Foreground="#16A085"/>
-                <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtX0" 
+                <TextBox x:FieldModifier="public" Grid.Row="1" Grid.Column="1" x:Name="txtX0" 
                          Width="90" Margin="5" Padding="5" 
                          FontSize="14" Text="0,5" 
                          PreviewTextInput="NumberValidationTextBox"
@@ -69,7 +69,7 @@
                 <TextBlock Grid.Row="1" Grid.Column="2" Text="xₖ =" 
                            FontSize="14" FontWeight="Bold" 
                            VerticalAlignment="Center" Margin="10,5" Foreground="#16A085"/>
-                <TextBox Grid.Row="1" Grid.Column="3" x:Name="txtXk" 
+                <TextBox x:FieldModifier="public" Grid.Row="1" Grid.Column="3" x:Name="txtXk" 
                          Width="90" Margin="5" Padding="5" 
                          FontSize="14" Text="2,5" 
                          PreviewTextInput="NumberValidationTextBox"
@@ -79,7 +79,7 @@
                 <TextBlock Grid.Row="1" Grid.Column="4" Text="dx =" 
                            FontSize="14" FontWeight="Bold" 
                            VerticalAlignment="Center" Margin="10,5" Foreground="#16A085"/>
-                <TextBox Grid.Row="1" Grid.Column="5" x:Name="txtDx" 
+                <TextBox x:FieldModifier="public" Grid.Row="1" Grid.Column="5" x:Name="txtDx" 
                          Width="90" Margin="5" Padding="5" 
                          FontSize="14" Text="0,2" 
                          PreviewTextInput="NumberValidationTextBox"
@@ -89,7 +89,7 @@
                 <TextBlock Grid.Row="2" Grid.Column="0" Text="a =" 
                            FontSize="14" FontWeight="Bold" 
                            VerticalAlignment="Center" Margin="10,5" Foreground="#16A085"/>
-                <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtA" 
+                <TextBox x:FieldModifier="public" Grid.Row="2" Grid.Column="1" x:Name="txtA" 
                          Width="90" Margin="5" Padding="5" 
                          FontSize="14" Text="2" 
                          PreviewTextInput="NumberValidationTextBox"
@@ -99,7 +99,7 @@
                 <TextBlock Grid.Row="2" Grid.Column="2" Text="b =" 
                            FontSize="14" FontWeight="Bold" 
                            VerticalAlignment="Center" Margin="10,5" Foreground="#16A085"/>
-                <TextBox Grid.Row="2" Grid.Column="3" x:Name="txtB" 
+                <TextBox x:FieldModifier="public" Grid.Row="2" Grid.Column="3" x:Name="txtB" 
                          Width="90" Margin="5" Padding="5" 
                          FontSize="14" Text="3" 
                          PreviewTextInput="NumberValidationTextBox"
@@ -109,7 +109,7 @@
                 <TextBlock Grid.Row="2" Grid.Column="4" Text="c =" 
                            FontSize="14" FontWeight="Bold" 
                            VerticalAlignment="Center" Margin="10,5" Foreground="#16A085"/>
-                <TextBox Grid.Row="2" Grid.Column="5" x:Name="txtC" 
+                <TextBox x:FieldModifier="public" Grid.Row="2" Grid.Column="5" x:Name="txtC" 
                          Width="90" Margin="5" Padding="5" 
                          FontSize="14" Text="1" 
                          PreviewTextInput="NumberValidationTextBox"
@@ -157,7 +157,7 @@
 
                 <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" 
                               HorizontalScrollBarVisibility="Auto">
-                    <TextBox x:Name="txtResults" 
+                    <TextBox x:FieldModifier="public" x:Name="txtResults" 
                              FontFamily="Consolas" FontSize="12"
                              IsReadOnly="True" Background="#F8F9F9"
                              TextWrapping="NoWrap" Margin="5" Padding="5"

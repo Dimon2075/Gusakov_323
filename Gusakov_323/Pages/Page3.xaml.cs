@@ -32,7 +32,7 @@ namespace Gusakov_323.Pages
             public bool IsValid { get; set; }
             public string Note { get; set; }
         }
-        private List<DataPoint> dataPoints = new List<DataPoint>();
+        public List<DataPoint> dataPoints = new List<DataPoint>();
         private double currentCoefficient = 0;
         private double currentCosSqrtA3 = 0;
         private double currentA = 0, currentB = 0, currentC = 0;
@@ -71,7 +71,7 @@ namespace Gusakov_323.Pages
             }
         }
 
-        private void btnCalculate_Click(object sender, RoutedEventArgs e)
+        public void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
             try
             {

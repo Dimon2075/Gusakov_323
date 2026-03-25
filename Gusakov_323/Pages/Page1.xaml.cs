@@ -97,7 +97,7 @@ namespace Gusakov_323.Pages
             txtStatus.Foreground = new SolidColorBrush(Colors.Gray);
         }
 
-        private string CalculateFunction(double x, double y, double z)
+        public string CalculateFunction(double x, double y, double z)
         {
             try
             {

@@ -22,7 +22,7 @@ namespace Gusakov_323.Pages
     public partial class Page2 : Page
     {
         // Перечисление для выбора функции
-        private enum FunctionType
+        public enum FunctionType
         {
             Sh,     // sh(x) - гиперболический синус
             X2,     // x² - квадрат
@@ -117,7 +117,7 @@ namespace Gusakov_323.Pages
         /// <summary>
         /// Вычисление кусочной функции a
         /// </summary>
-        private string CalculatePiecewiseFunction(double x, double y, FunctionType funcType)
+        public string CalculatePiecewiseFunction(double x, double y, FunctionType funcType)
         {
             try
             {
